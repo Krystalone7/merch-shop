@@ -30,6 +30,9 @@
                     <li class="active"><a th:href="@{/shoppingCart}">Корзина</a></li>
                 </ul>
                 <ul class="nav navbar-nav" sec:authorize="!isAuthenticated()">
+                    <li class="active"><a th:href="@{/}">Админка</a></li>
+                </ul>
+                <ul class="nav navbar-nav" sec:authorize="!isAuthenticated()">
                     <li class="active"><a th:href="@{/registration}">Регистрация</a></li>
                 </ul>
                 <ul class="nav navbar-nav" sec:authorize="!isAuthenticated()">
