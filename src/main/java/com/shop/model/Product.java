@@ -36,6 +36,9 @@ public class Product {
     @DecimalMin(value = "0.00", message = "*Price has to be non negative number")
     private BigDecimal price;
 
+    @Column(name = "image", nullable = false)
+    private String image;
+
     public Long getId() {
         return id;
     }
@@ -74,6 +77,14 @@ public class Product {
 
     public void setPrice(BigDecimal unitPrice) {
         this.price = unitPrice;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     @Override
